@@ -18,6 +18,14 @@ def method():
 def kona():
     return render_template('car.html',image_file='static/img/kona.jpg')    
 
+@app.route('/angle')
+def angle():
+    return render_template('randomangle.html')    
+
+@app.route('/rear')
+def camera1():
+    return render_template('cam1.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
